@@ -21,4 +21,34 @@ body{
     color: blue;
 }
 
+.manufacturer-list{
+    list-style: none;
+    border: 1px;
+    margin: 1px;
+}
 
+
+.manufacturer-card{
+    border-radius: 10px;
+    margin-bottom: 1px;
+    padding: 1.5rem;
+    box-shadow: inset;
+}
+
+.manufacturer-card img{
+    object-fit: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.manufacturer-card a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(78, 78, 78);
+}
+
+.manufacturer-card span{
+    font-size: large;
+    font-weight: 100;
+}
