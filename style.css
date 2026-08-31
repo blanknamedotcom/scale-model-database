@@ -44,9 +44,14 @@ ul{
 
 .manufacturer-card{
     height: 200px;
-    width: 300px;
+    width: 100%;
     perspective: 1000px;
+    border-radius: 12px; 
     
+}
+
+.manufacturer-card :hover{
+box-shadow: 0px 3px 18px 3px rgb(110, 128, 224);
 }
 
 .card-inner{
@@ -68,18 +73,28 @@ ul{
     width: 100%;
     backface-visibility: hidden; 
     background-color: bisque;
-    border-radius: 12;
-    box-shadow: 0px 3px 18px 3px rgb(78, 78, 78);
-}
-
-.card-front--front{
+    border-radius: 12px;
+    
     display: flex;
+    justify-content: center;
+    padding: 0;
     align-items: center;
 }
 
 .card-back{
     transform: rotateY(180deg);
     background-color: bisque;
+    backface-visibility: hidden; 
+    border-radius: 12px; 
+    position: absolute; 
+    width: 100%; 
+    height: 100%;
+    color: #242323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
 }
 
 .manufacturer-card img{
